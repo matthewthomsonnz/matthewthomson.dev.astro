@@ -1,0 +1,134 @@
+body {
+	font-family: 'Inconsolata', monospace;
+	margin: auto;
+	padding: 20px;
+	text-align: left;
+	word-wrap: break-word;
+	overflow-wrap: break-word;
+	line-height: 1.5;
+	color: #444;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+ {
+	color:rgb(51,48,46);
+	
+ }
+ h1 {
+	color: #0d7680;
+
+}
+
+h2 {
+	color: #0d7680;
+
+}
+
+h3:before {
+	content: "";
+	height: 40px;
+	width: 2px;
+	background-color: black;
+	display: block;
+	margin-left: 20px;
+	margin-bottom: 20px;
+}
+strong,
+b {
+	color: #0d7680;
+}
+a {
+	color: #0d7680;
+}
+// nav a {
+// 	margin-right: 10px;
+// }
+// textarea {
+// 	width: 100%;
+// 	font-size: 16px;
+// }
+// input {
+// 	font-size: 16px;
+// }
+// content {
+// 	line-height: 1.6;
+// }
+// table {
+// 	width: 100%;
+// }
+img {
+	max-width: 100%;
+	height: auto;
+}
+// code {
+// 	padding: 2px 5px;
+// 	background-color: #f2f2f2;
+// }
+// pre {
+// 	padding: 1rem;
+// }
+// pre > code {
+// 	all: unset;
+// }
+// blockquote {
+// 	border: 1px solid ;
+// 	color: #222;
+// 	padding: 2px 0px 2px 20px;
+// 	margin: 0px;
+// 	font-style: italic;
+// }
+
+
+  form {
+	margin-bottom: 10px;
+    display: inline-block;
+    width: 100%;
+    input,
+    textarea {
+        position: relative;
+        line-height: 2.25rem;
+        font-size: 1rem;
+        padding: 0 0.625rem;
+        border-radius:0;
+        border: none;
+        width: 100%;
+        transition: box-shadow 150ms ease;
+        color:#0d7680;
+		box-shadow: 5px 5px black;
+		border: 2px solid black;
+		margin-bottom: 20px;
+        &:focus {
+          outline: none;
+		border: 2px solid #0d7680;
+
+		box-shadow: 5px 5px #0d7680;
+
+      }
+    }
+    button {
+        display: inline-block;
+        width: auto;
+        background-color: #0d7680;
+        color: white; 
+        border: none;
+        padding: 0.5rem 1rem;
+        font: inherit;
+        cursor: pointer;
+        outline: inherit;
+    }
+    textarea {
+        line-height: 1.5;
+        padding: 0.5rem 0.625rem;
+        resize: vertical;
+    }
+    label {
+        display: block;
+        margin-bottom: 0.25rem;
+    }
+  }

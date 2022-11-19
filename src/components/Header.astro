@@ -1,25 +1,20 @@
 ---
 import HeaderLink from './HeaderLink.astro';
-import { SITE_TITLE } from '../config';
+
+
+const { title, description, image = '/placeholder-social.jpg', styles } = Astro.props;
 ---
 
+
 <header>
-	<h2>
-		{SITE_TITLE}
-	</h2>
 	<nav>
-		<HeaderLink href="/">Home</HeaderLink>
-		<HeaderLink href="/blog">Blog</HeaderLink>
-		<HeaderLink href="/about">About</HeaderLink>
-		<HeaderLink href="https://twitter.com/astrodotbuild" target="_blank">Twitter</HeaderLink>
-		<HeaderLink href="https://github.com/withastro/astro" target="_blank">GitHub</HeaderLink>
+ 
+
+		<ul>
+			<li><HeaderLink href="/">About</HeaderLink></li>
+			<li><HeaderLink href="/work">Work</HeaderLink></li>
+			<!-- <li><HeaderLink href="/blog">Blog</HeaderLink></li> -->
+			<li><HeaderLink href="/contact">Contact</HeaderLink></li>
+		</ul>
 	</nav>
 </header>
-<style>
-	header {
-		margin: 0em 0 2em;
-	}
-	h2 {
-		margin: 0.5em 0;
-	}
-</style>
